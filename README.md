@@ -14,7 +14,7 @@
 ## Problemas:
 
 
-## O que é a Leak Gas?
+## AirConomics
 
 
 ## Qual nosso objetivo?
@@ -25,16 +25,7 @@
 
 
 ## To-Do List
-- [x] Logo do Projeto
-- [x] Documentação Inicial
-- [x] Diagrama de Visão de Negócios
-- [x] Site Institucional       
-- [x] Levantamento de Requisitos
-- [x] Instalação de VM com Lubunt
-- [x] Programa Arduino coletando os dados
-- [x] Tabelas Banco de Dados (MySQL)
-- [x] Calculadora Financeira
-- [x] PowerPoint Sprint1
+
 
 ## Ferramentas Utilizadas
 ![](imagens/trello.png) 
