@@ -5,6 +5,7 @@ git commit -m "Doc: fiz X no doc X"
 
 Bug em código:
 git commit -m "Bug: arrumei bug X em X"
+git commit -m "Fix> arrumei X em X"
 
 Nova funcionalidade:
 git commit -m "Feature: adicionei X em X"
