@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/sptech.png" />
+    <link rel="stylesheet" href="./style.css">
     <title>AIRConomics</title>
   </head>
   <body>
-    <h1>AIRConomics Calc</h1>
+    <main class="container">
+      <div class="container-calculator">
+        <h1><span>AIR</span>Conomics Calc</h1>
+        Quantidade de aparelhos: <input type="number" id="ipt_qtd_aparelhos">
+        Horas de consumo do aparelho: <input type="number" id="ipt_horas_consumo">
+        Potência do aparelho (Watts): <input type="number" id="ipt_potencia">
+        Provedora de energia:
+        <div class='radio-provedores'>
+          ENEL <input type="radio" name="provedor" id="r_enel" value="enel">
+          CPFE <input type="radio" name="provedor" id="r_cpfe" value="cpfe">
+          Outro <input type="radio" onclick="mostrar_outra()" name="provedor" id="r_outro" value="outro">
+        </div>
+        
+        <div class="outro-provedor">
+          Insira a taxa da sua provedora: <input type="text" id="ipt_taxa_outro">
+        </div>
+
+        <button onclick="calcular()">Calcular</button>
+      </div>
+
+      <div class="container-result">
+
+      </div>
+    </main>
+   
+    
   </body>
+  <script src="./script.js"></script>
 </html>
