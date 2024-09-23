@@ -3,7 +3,7 @@
 ## Integrantes
 * Guilherme Montin - 01242013
 * Pedro Henrique Morais Pereira - 01242067
-* Pedro Rogério -
+* Pedro Rogério - 0124048
 * Rafael Pavani de Souza Silva - 01242003
 * Rômulo Ciriaco - 01242014
 * Willian Salles - 01242096
