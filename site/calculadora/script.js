@@ -3,7 +3,7 @@ var divResultado = document.querySelector('.container-result')
 var taxaProvedora = 0
 
 function mostrar_outra(){
-  outroProvedor.style.display = 'block'
+  outroProvedor.style.display = 'flex'
 }
 
 function calcular(){
