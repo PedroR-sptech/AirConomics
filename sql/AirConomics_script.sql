@@ -7,7 +7,7 @@ CREATE TABLE tb_login (
     senha_login VARCHAR(45)
 );
 
-INSERT INTO tb_login (nome_login, senha_login) VALUES 
+INSERT INTO tb_login (nome_login, md5senha_login) VALUES 
 ('usuario1', 'senha1'),
 ('usuario2', 'senha2'),
 ('usuario3', 'senha3'),
