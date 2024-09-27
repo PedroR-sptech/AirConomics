@@ -45,7 +45,7 @@
 }
 
 .social {
-  background-image: url('./img/banner.jpg');
+  background-image: url('../img/banner.jpg');
   height: 90vh; 
   
   background-size: cover;
@@ -79,24 +79,27 @@
   border-radius: 16px; 
   background-color: var(--secondary); 
   box-shadow: 0 4px 20px var(--logo-color); 
-  padding: 20px; 
-  
-
+  padding: 30px; 
+  justify-content: center;
   display: flex;
-
-  align-items: center; 
+  flex-direction: column;
+  align-items: center;
 }
+
 
 .box img { 
-  
-  width: 50px; 
-  margin-right: 20px; 
- 
+  width: 100x;
+    border-radius: 5px;
+    height: 100px;
+   
 }
+ 
+
 
 .box h4 {
   color: var(--logo-color); 
-  margin: 20; /* Remove margens para alinhamento */
+
+    margin-top: 20px;  /* Remove margens para alinhamento */
 }
 
 .footer {
