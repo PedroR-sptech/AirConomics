@@ -121,6 +121,12 @@
 .campo input{
     border-radius: 10px;
     padding: 3px 0;
+    
+}
+.campo input::placeholder{
+padding: 2PX;
+color: red;
+
 }
 
 .botao {
