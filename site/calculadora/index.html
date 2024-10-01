@@ -11,32 +11,19 @@
     <main class="container">
       <div class="container-calculator">
         <h1><span>AIR</span>Conomics Calc</h1>
-        Quantidade de aparelhos: <input type="number" id="ipt_qtd_aparelhos">
-        Horas de consumo do aparelho: <input type="number" id="ipt_horas_consumo">
-        Potência do aparelho (Watts): <input type="number" id="ipt_potencia">
-        Provedora de energia:
-        <div class='radio-provedores'>
-          ENEL <input type="radio" name="provedor" id="r_enel" value="enel">
-          CPFE <input type="radio" name="provedor" id="r_cpfe" value="cpfe">
-          Outro <input type="radio" onclick="mostrar_outra()" name="provedor" id="r_outro" value="outro">
-        </div>
-        
-        <div class="outro-provedor">
-          Insira a taxa da sua provedora: <input type="text" id="ipt_taxa_outro">
-        </div>
-
-        Selecione sua bandeira:
-        <select id="select_bandeira">
-          <option value="">Selecione sua bandeira...</option>
-          <option value="1">Verde</option>
-          <option value="2">Amarela</option>
-          <option value="3">Vermelha</option>
+        Selecione o tamanho do seu ambiente:
+        <select id="select_sala">
+          <option value="">Selecione o tamanha do seu ambiente...</option>
+          <option value="1">30m2</option>
+          <option value="2">50m2</option>
+          <option value="3">100m2</option>
         </select>
-
+        BTU's dos aparelhos somados: <input type="number" id="ipt_btu">
+        Tempo de uso (horas): <input type="number" id="ipt_tempo">
         <button onclick="calcular()">Calcular</button>
       </div>
 
-      <div class="container-result">
+      <div class="container-result" id="div_result">
 
       </div>
     </main>
