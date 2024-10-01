@@ -180,6 +180,8 @@
 
 
 
+
+
 .back {
   background-color: var(--secondary);
   transform: rotateY(180deg); /* Esconde a parte de trás inicialmente, ou seja irá rotacionar pessoal !! */
@@ -192,6 +194,7 @@
 .box:hover .back {
   transform: rotateY(0); /* Mostra a parte de trás ao passar o mouse */
 }
+
 
 
 .box img { 
@@ -211,8 +214,6 @@
   
   
  
-
-    /* Remove margens para alinhamento */
 }
 
 
