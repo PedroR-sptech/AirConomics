@@ -44,7 +44,10 @@ INSERT INTO tb_usuario (nome_usuario, telefone_usuario, email_usuario, fk_login)
 CREATE TABLE tb_empresa (
     id_empresa INT PRIMARY KEY AUTO_INCREMENT,
     nome_empresa VARCHAR(65) NOT NULL,
-    endereco_empresa VARCHAR(100) NOT NULL,
+    rua_endereco_empresa VARCHAR(100) NOT NULL,
+    bairro_endereco_empresa VARCHAR(100) NOT NULL,
+    cep_endereco_empresa CHAR(8) NOT NULL,
+    numero_endereco_empresa VARCHAR(100) NOT NULL,
     email_empresa VARCHAR(45) NOT NULL,
     cnpj_empresa CHAR(14) NOT NULL,
     fk_usuario INT,
