@@ -65,75 +65,6 @@
   width: 80%; 
   padding: 20px; /*espaço ao redor do conteúdo que você guilherme quiser implementar*/
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-:root {
-  --primary: #363636;
-  --secondary: #ddd;
-  --logo-color: #0080ff;       
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-  color: var(--secondary);
-}
-
-.header {
-  background-color: var(--primary);
-  width: 100%;
-  height: 10vh; 
-  display: flex;
-  justify-content: center;
-  align-items: center; /* Alinha verticalmente */
-}
-
-.header .navbar {
-  display: flex;
-  width: inherit;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.header .navbar .navbar-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.header .navbar .logo-link .logo {
-  width: 104px;
-}
-
-.header .navbar .profile-link .profile {
-  width: 36px;
-}
-
-.social {
-  background-image: url('../img/banner.jpg');
-  height: 90vh; 
-  
-  
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
- 
-  justify-content: center;/* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
-}
-
-.social .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  align-items: center;
-  width: 80%; 
-  padding: 20px; /*espaço ao redor do conteúdo que você guilherme quiser implementar*/
-}
-
 .social .container .boxes {
   display: flex;
   flex-direction: row; /* fiz as boxes ficarem  em linha */
@@ -164,6 +95,7 @@
  
   
 }
+
 .front, .back {
   position: absolute;
   width: 100%;
@@ -178,15 +110,6 @@
   padding: 20px;
 }
 
-
-
-
-
-.back {
-  background-color: var(--secondary);
-  transform: rotateY(180deg); /* Esconde a parte de trás inicialmente, ou seja irá rotacionar pessoal !! */
-}
-
 .box:hover .front {
   transform: rotateY(180deg); /* Vira a frente ao passar o mouse */
 }
@@ -195,13 +118,10 @@
   transform: rotateY(0); /* Mostra a parte de trás ao passar o mouse */
 }
 
-
-
 .box img { 
   width: 200px;
     border-radius: 10px;
     height: 200px;
-   
 }
  
 
@@ -211,37 +131,24 @@
   -webkit-text-stroke-color: var(--logo-color); */
   color: var(--secundary);
   text-shadow: 0 0 5px var(--logo-color), 0 0 10px var(--logo-color), 0 0 15px var(--logo-color);
-  
-  
- 
 }
-
-
-
 
 .box p {
-margin: 10%;
-color: var(--primary);
-align-items: center;
-font-family:Verdana, Geneva, Tahoma, sans-serif;
-
-
+  margin: 10%;
+  color: var(--primary);
+  align-items: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-
 .front span{
-
   color: var(--logo-color);
 }
 
 .back span {
-
   color:  var(--logo-color);
 }
 
-
-.footer {
+.content {
   background-color: var(--primary);
   height: 100px;
   color:var(--secondary);
@@ -251,21 +158,15 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size: 12px;
 }
 
+.content .container {
+  justify-content: center;
+  align-items: center ; 
+}   /* optei por usar para centralizar os itens escritos em meu footer*/
 
 
-
-
-
-.footer .container {
-justify-content: center;
-align-items: center ; }   /* optei por usar para centralizar os itens escritos em meu footer*/
-
-
- .footer span {
-
+.content span {
   color: var(--logo-color);
-
- }
+}
 
 
 
@@ -293,58 +194,33 @@ nas suas realizações
   flex-direction: column;
 }
 
-
-
 .back {
   background-color: var(--secondary);
   transform: rotateY(180deg); /* Esconde a parte de trás inicialmente, ou seja irá rotacionar pessoal !! */
 }
 
-.box:hover .front {
-  transform: rotateY(180deg); /* Vira a frente ao passar o mouse */
-}
-
-.box:hover .back {
-  transform: rotateY(0); /* Mostra a parte de trás ao passar o mouse */
-}
-
-
 .box img { 
   width: 100px;
-    border-radius: 10px;
-    height: 100px;
-   
+  border-radius: 10px;
+  height: 100px;
 }
- 
-
 
 .box h2 {
   /* -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--logo-color); */
   color: var(--secundary);
   text-shadow: 0 0 5px var(--logo-color), 0 0 10px var(--logo-color), 0 0 15px var(--logo-color);
-  
-  
- 
-
-    margin-top: 20px;  /* Remove margens para alinhamento */
+  margin-top: 20px;  /* Remove margens para alinhamento */
 }
-
-
-
 
 .box p {
-margin: 10%;
-color: var(--primary);
-align-items: center;
-font-family:Verdana, Geneva, Tahoma, sans-serif;
-
-
+  margin: 10%;
+  color: var(--primary);
+  align-items: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-
-.footer {
+.content {
   background-color: var(--primary);
   height: 100px;
   color:var(--secondary);
@@ -354,33 +230,72 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size: 12px;
 }
 
-
-
-
-
-
-.footer .container {
-justify-content: center;
-align-items: center ; }   /* optei por usar para centralizar os itens escritos em meu footer*/
-
-
- .footer span {
-
-  color: var(--logo-color);
-
- }
-
 .version {
   font-size: 12px;
 }
 
+.footer{
+  background-color: var(--primary);
+  color: var(--secondary);
+  height: fit-content;
+  width: 100%;
+}
 
+.footer .footer-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 15px;
+  padding-top: 15px;
+}
 
+.footer .footer-top .footer-left{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
 
+.footer .footer-top .footer-left a{
+  text-decoration: none;
+  color: var(--secondary);
+}
 
+.footer .footer-top .footer-left ul{
+  list-style: none;
+}
 
-/* a parte do footer foi mais fácil de realizar por conta do aprednizado que coloquei em prática
+.footer .footer-top .footer-right{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: cente
+}
 
-tive a consciência e usei o social para pegar o parte do cabeçalho depois do header e antes do footer, assim o que estava presente nessa div foi
-meu conteiner que utilizei para criar boxes e e na box utilizei as formas de fazer com bordas masi arredondadas , mas não tive sucesso 
-nas suas realizações
+.footer .footer-top .footer-right  ul{
+  list-style: none;
+}
+
+.footer .footer-top .footer-right li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer .footer-top .footer-right img{
+  width: 20px;
+}
+
+.footer .footer-bottom{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 15px;
+}
+
+.footer .footer-bottom img{
+  width: 102px;
+}
