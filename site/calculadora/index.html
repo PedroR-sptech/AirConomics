@@ -1,34 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../img/sptech.png" />
-    <link rel="stylesheet" href="./style.css">
-    <title>AIRConomics</title>
-  </head>
-  <body>
-    <main class="container">
-      <div class="container-calculator">
-        <h1><span>AIR</span>Conomics Calc</h1>
-        Selecione o tamanho do seu ambiente:
-        <select id="select_sala">
-          <option value="">Selecione o tamanha do seu ambiente...</option>
-          <option value="1">30m2</option>
-          <option value="2">50m2</option>
-          <option value="3">100m2</option>
-        </select>
-        BTU's dos aparelhos somados: <input type="number" id="ipt_btu">
-        Tempo de uso (horas): <input type="number" id="ipt_tempo">
-        <button onclick="calcular()">Calcular</button>
-      </div>
 
-      <div class="container-result" id="div_result">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../img/sptech.png" />
+  <link rel="stylesheet" href="./style.css">
+  <title>AIRConomics</title>
+</head>
 
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="../index.html" class="logo-link"><img src="../img/airconomics_logo_completo.png" class="logo" /></a>
+      <ul class="navbar-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./Sobre_nós.html">Sobre Nós</a></li>
+        <li><a href="../servicos/servicos.html">Serviços</a></li>
+      </ul>
+
+      <a href="../login/index.html" class="profile-link"><img src="../img/profile.png" class="profile"></a>
+    </nav>
+  </header>
+  <div class="social">
+    <div class="container">
+      <div class="boxes">
+        <div class="box">
+
+          <div class="container-calculator">
+            <h1><span>AIR</span>Conomics Calc</h1>
+            Selecione o tamanho do seu ambiente:
+            <select id="select_sala">
+              <option value="">Selecione o tamanha do seu ambiente...</option>
+              <option value="1">30m2</option>
+              <option value="2">50m2</option>
+              <option value="3">100m2</option>
+            </select>
+            BTU's dos aparelhos somados: <input type="number" id="ipt_btu">
+            Tempo de uso (horas): <input type="number" id="ipt_tempo">
+            <button onclick="calcular()">Calcular</button>
+          </div>
+
+          <div class="container-result" id="div_result">
+
+          </div>
+        </div>
       </div>
-    </main>
-   
-    
-  </body>
-  <script src="./script.js"></script>
+    </div>
+  </div>
+  <div>
+    <!-- <div class="footer">
+      <div class="container">
+
+        <h2>O que é a <span>Air</span>Conomics? </h2>
+        <p>Somos uma empresa de monitoramento de temperatura de ar-condicionado em ambientes empresariais.</p>
+
+    </div>
+    </div> -->
+
+</body>
+<script src="./script.js"></script>
+
 </html>
