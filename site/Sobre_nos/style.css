@@ -123,15 +123,6 @@
     border-radius: 10px;
     height: 200px;
 }
- 
-
-
-.box h2 {
-  /* -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--logo-color); */
-  color: var(--secundary);
-  text-shadow: 0 0 5px var(--logo-color), 0 0 10px var(--logo-color), 0 0 15px var(--logo-color);
-}
 
 .box p {
   margin: 10%;
@@ -150,17 +141,22 @@
 
 .content {
   background-color: var(--primary);
-  height: 100px;
+  height: fit-content;
   color:var(--secondary);
   display: flex;
-  
-  
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  padding: 0 10%;
   font-size: 12px;
 }
 
 .content .container {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center ; 
+  align-items: center;
+  gap: 20px; 
 }   /* optei por usar para centralizar os itens escritos em meu footer*/
 
 
@@ -168,6 +164,9 @@
   color: var(--logo-color);
 }
 
+.content p{
+  font-size: 1rem;
+}
 
 
 /* a parte do footer foi mais fácil de realizar por conta do aprednizado que coloquei em prática
@@ -206,9 +205,7 @@ nas suas realizações
 }
 
 .box h2 {
-  /* -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--logo-color); */
-  color: var(--secundary);
+  color: var(--secondary);
   text-shadow: 0 0 5px var(--logo-color), 0 0 10px var(--logo-color), 0 0 15px var(--logo-color);
   margin-top: 20px;  /* Remove margens para alinhamento */
 }
@@ -218,16 +215,6 @@ nas suas realizações
   color: var(--primary);
   align-items: center;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.content {
-  background-color: var(--primary);
-  height: 100px;
-  color:var(--secondary);
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  font-size: 12px;
 }
 
 .version {
