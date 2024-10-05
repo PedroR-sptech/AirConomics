@@ -77,18 +77,32 @@ background-color: var(--secondary);
 
 
 .social .container .boxes {
-  display: flex;
-  
-  justify-content: center; /* centralizei de forma horizontal boxes */
-  gap: 20px; 
-  align-self: center;
- 
+  display: flex; /* Certifique-se de que isso está correto */
+  gap: 60px; /* Espaço entre as caixas */
+  justify-content: center; /* Alinha horizontalmente */
 }
 
-.box {
+.container-result {
+  min-width: 400px; 
+  max-width: 500px; 
+ 
+  border-radius: 16px;
+  
+  background-color: var(--secondary); 
+  box-shadow: 0 4px 20px var(--logo-color); 
+  padding: 60px; 
+ justify-content: center;
+
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  
+}
+.box  {
   flex: 1; /* Faz a box ocupar espaço proporcionalmente */
   min-width: 400px; 
   max-width: 500px; 
+ 
   
   border-radius: 16px; 
   background-color: var(--secondary); 
@@ -165,7 +179,6 @@ background-color: var(--secondary);
   background-color: var(--bg-primary);
   color: var(--color-primary);
 }
-
 
 
 

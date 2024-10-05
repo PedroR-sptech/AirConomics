@@ -44,18 +44,23 @@ function calcular(){
   
   var economia = custoMensal - custoMensalEco
   console.log(economia)
+  div_result.style.display = 'block';
 
   div_result.innerHTML = `
-                          <p>Levando em conta sua sala com o tamanho de ${tamanhoSala}m2, aparelhos ${inputBTU}BTU's,
-                          tempo de uso diário de ${tempoUso} horas,
-                          o ciclo do seu aparelho (Tempo de resfriamento da sala até a temperatura deseja e tempo até essa temperatura subir 2 graus)
-                          é de ${ciclo} minutos, com seu uso, você terá ${qtdCiclos} por dia.</p>
-                          Com isso, lhe apresentamos 2 cenários:
-                          <br>
-                          Cenário 1 (uso contínuo do aparelho): Você gastará R$${custoMensal.toFixed(2)}/mês
-                          <br>
-                          Cenário 2 (uso por ciclos): Você gastará R$${custoMensalEco.toFixed(2)}/mês
-                          <br>
-                          A economia mensal utilizando o cenário 2 é de R$${economia.toFixed(2)}/mês
-                         `
+                           <p><strong>Resultados da Calculadora:</strong></p>
+    <p>Com base nas informações fornecidas, realizamos os cálculos para determinar os custos e ciclos do seu aparelho.</p>
+    <ul>
+        <li><strong>Tamanho da sala:</strong> ${tamanhoSala} m²</li>
+        <li><strong>Capacidade total:</strong> ${inputBTU} BTUs</li>
+        <li><strong>Tempo de uso diário:</strong> ${tempoUso / 60} horas</li>
+        <li><strong>Ciclo do aparelho:</strong> ${ciclo} minutos</li>
+        <li><strong>Ciclos por dia:</strong> ${qtdCiclos.toFixed(2)}</li>
+    </ul>
+    <p>Os custos foram calculados considerando:</p>
+    <ul>
+        <li><strong>Cenário 1:</strong> Uso contínuo: R$${custoMensal.toFixed(2)}/mês</li>
+        <li><strong>Cenário 2:</strong> Uso por ciclos: R$${custoMensalEco.toFixed(2)}/mês</li>
+        <li><strong>Economia mensal:</strong> R$${economia.toFixed(2)}/mês</li>
+    </ul>
+`;
 }
