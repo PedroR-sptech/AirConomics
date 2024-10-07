@@ -47,14 +47,14 @@ function calcular(){
   div_result.style.display = 'block';
 
   div_result.innerHTML = `
-                           <p><strong>Resultados da Calculadora:</strong></p>
+                           <p><h2><strong>Resultados da Calculadora:</strong></h2></p>
     <p>Com base nas informações fornecidas, realizamos os cálculos para determinar os custos e ciclos do seu aparelho.</p>
     <ul>
         <li><strong>Tamanho da sala:</strong> ${tamanhoSala} m²</li>
         <li><strong>Capacidade total:</strong> ${inputBTU} BTUs</li>
         <li><strong>Tempo de uso diário:</strong> ${tempoUso / 60} horas</li>
-        <li><strong>Ciclo do aparelho:</strong> ${ciclo} minutos</li>
-        <li><strong>Ciclos por dia:</strong> ${qtdCiclos.toFixed(2)}</li>
+        <li><strong>Ciclo do aparelho:</strong> ${ciclo.toFixed(0)} minutos</li>
+        <li><strong>Ciclos por dia:</strong> ${qtdCiclos.toFixed(0)}</li>
     </ul>
     <p>Os custos foram calculados considerando:</p>
     <ul>
