@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Graphics</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <div class="grafico-direita">
+        <h1>Gráfico Temperatura:</h1>
+        <div>
+            <canvas id="sensorAnalogico"></canvas>
+        </div>
+        <div class="grafico-esquerda">
+            <h1>Temperatura atual:</h1>
+            <span id="sensorAnalogicoAtual"></h2>
+        </div>
+        <!-- <div style="width: 50%;">
+            <canvas id="sensorDigital"></canvas>
+        </div> -->
+    </div>
+
+    <script>
+        var tempAtualSpan = document.querySelector('#sensorAnalogicoAtual')
+        var sensorAnalogico = new Chart(document.getElementById('sensorAnalogico').getContext('2d'), {
+            type: 'line',
+            data: {
+                datasets: [{
+                    label: 'Analogico',
+                    borderColor: '#63B1BC',
+                    backgroundColor: '#ED145B',
+                 
+                }]
+            },
+            options: {
+                plugins: {
+            legend: {
+                display: true,
+                labels: {
+                    color: 'blue',
+                 
+                }
+            }
+        
+                },
+
+                scales: {
+                    x: {
+                        beginAtZero: true
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: '(%)'
+                        },
+                        beginAtZero: true,
+                    },
+                },
+            }
+        });
+
+        var paginacao = {};
+        var tempo = {};
+
+        function obterDados(grafico, endpoint) {
+            
+            fetch('http://localhost:3300/sensores/' + endpoint)
+                .then(response => response.json())
+                .then(valores => {
+                    if (paginacao[endpoint] == null) {
+                        paginacao[endpoint] = 0;
+                    }
+                    if (tempo[endpoint] == null) {
+                        tempo[endpoint] = 0;
+                    }
+
+                    var ultimaPaginacao = paginacao[endpoint];
+                    paginacao[endpoint] = valores.length;
+                    valores = valores.slice(ultimaPaginacao);
+
+                    valores.forEach((valor) => {
+                        tempAtualSpan.innerText = ''
+                        if (grafico.data.labels.length == 10 && grafico.data.datasets[0].data.length == 10) {
+                            grafico.data.labels.shift();
+                            grafico.data.datasets[0].data.shift();
+                        }
+                        let tempAtual = parseFloat(valor);
+                        grafico.data.labels.push(tempo[endpoint]++);
+                        grafico.data.datasets[0].data.push(tempAtual);
+                        grafico.update();
+                        let color = ''
+                        if(tempAtual >= 25 ){
+                            color = 'crimson'
+                        }else{
+                            color = 'blue'
+                        }
+                        tempAtualSpan.innerText = `${tempAtual} ºC`
+                        tempAtualSpan.style.color = color
+                    });
+                    // let tempAtual = parseFloat(valor);
+                    
+                })
+                .catch(error => console.error('Erro ao obter dados:', error));
+        }
+
+        setInterval(() => {
+            obterDados(sensorAnalogico, 'analogico');
+        }, 1000);
+
+    </script>
+</body>
+
+</html>
