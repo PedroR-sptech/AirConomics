@@ -15,75 +15,56 @@
 }
 
 /* Header */
-.header {
+.header{
     background-color: var(--primary);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    color: var(--secondary);
-    padding: 8px;
-    text-align: center;
-
+    width: 100%;
+    height: 10vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alinha verticalmente */
 }
 
 .header .navbar {
     display: flex;
     width: inherit;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
 }
 
 .header .navbar .navbar-links {
     list-style: none;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     gap: 20px;
+    text-decoration: none;
 }
 
-.navbar-links li {
-    margin-right: 20px;
-}
-
-.navbar-links a {
+.header .navbar .navbar-links li a{
     color: var(--secondary);
     text-decoration: none;
 }
 
-.navbar-links a:hover {
-    color: var(--logo-color);
-    /* Cor ao passar o mouse */
-}
-
 .header .navbar .logo-link .logo {
     width: 104px;
-}
+    }
 
 .header .navbar .profile-link .profile {
     width: 36px;
 }
 
-/* FOOTER DO SITE INSTITUCIONAL */
-
-body {
-    background: fixed;
-    background-image: url('../img/banner.jpg');
+.container{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    min-height: 105vh;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.5);
-
 }
 
 .card {
-    position: fixed;
+    margin-top: 1%;
     width: 420px;
     background: transparent;
     border-radius: 12px;
@@ -119,7 +100,7 @@ body {
 }
 
 .input-box input::placeholder {
-    color: var(--secondary);
+    color: var(--primary);
 }
 
 .input-box i {
@@ -128,7 +109,7 @@ body {
     top: 30%;
     transform: translate(-50%);
     font-size: 20px;
-
+    color: var(--logo-color);
 }
 
 
@@ -170,7 +151,7 @@ body {
 .btn:hover {
     color: var(--logo-color);
     box-shadow: 0 0 20px var(--logo-color);
-    ;
+
 }
 
 @keyframes neon-animation {
