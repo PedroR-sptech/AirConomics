@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* Adicionar aqui toda a estilização criada para sua aplicação. */
 
-
+:root {
+    --primary: #363636;
+    --secondary: #ddd;
+    --logo-color: #0080ff;       
+}
 
 *{
     padding: 0;
@@ -13,12 +17,12 @@
 
 /* Header */
 .header{
-    background-color: #363636;
+    background-color: var(--primary);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    color: white;
+    color: var(--secondary);
     padding: 8px;
     text-align: center;
     
@@ -46,25 +50,24 @@
 }
 
 .navbar-links a {
-    color: white; 
+    color: var(--secondary); 
     text-decoration: none; 
 }
 
 .navbar-links a:hover {
-    color: #0080ff; /* Cor ao passar o mouse */
+    color: var(--logo-color); /* Cor ao passar o mouse */
 }
   
-  .header .navbar .logo-link .logo{
+.header .navbar .logo-link .logo{
     width: 104px;
-  }
+}
   
-  .header .navbar .profile-link .profile{
+.header .navbar .profile-link .profile{
     width: 36px;
-  }
-/* FOOTER DO SITE INSTITUCIONAL */
+}
 
 body{
-    background-image: url(../img/banner.jpg);
+    background-image: url('../img/banner.jpg');
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,6 +77,7 @@ body{
     background-color: rgba(0, 0, 0, 0.5);
     
 }
+
 .wrapper{
     width: 420px;
     background: transparent;
@@ -83,16 +87,19 @@ body{
     backdrop-filter: blur(10px);
     
 }
+
 .wrapper h1{
     font-size: 36px;
     text-align: center;
 }
+
 .wrapper .input-box{
     position: relative;
     width: 100%;
     height: 50px;
     margin: 30px 0;
 }
+
 .input-box input{
     width: 100%;
     height: 100%;
@@ -105,9 +112,11 @@ body{
     color: #000000;
     padding: 20px 45px 20px 20px;
 }
+
 .input-box input::placeholder{
-    color: #fff;
+    color: var(--secondary);
 }
+
 .input-box i{
     position: absolute;
     right: 20px;
@@ -124,11 +133,11 @@ body{
     margin: -15px 0 15px;
 }
 .remember-forgot label input{
-    accent-color: #fff;
+    accent-color: var(--secondary);
     margin-right: 3px;
 }
 .remember-forgot a{
-    color: #fff;
+    color: var(--secondary);
     text-decoration: none;
 }
 .remember-forgot a:hover{
@@ -142,7 +151,7 @@ body{
 .btn {
     width: 100%;
     height: 45px;
-    background: #ffffff;
+    background: var(--secondary);
     border: none;
     outline: none;
     border-radius: 40px;
@@ -164,7 +173,7 @@ body{
     right: 0;
     bottom: 0;
     border-radius: 40px;
-    border: 2px solid #0080ff;
+    border: 2px solid var(--logo-color);
     opacity: 0;
     transition: opacity 0.3s ease;
     animation: neon-animation 1.5s infinite alternate;
@@ -175,8 +184,8 @@ body{
 }
 
 .btn:hover {
-    color: #0080ff;
-    box-shadow: 0 0 20px #0080ff;
+    color: var(--logo-color);
+    box-shadow: 0 0 20px var(--logo-color);
 }
 
 .cadastro{
@@ -187,8 +196,8 @@ body{
 }
 
 .cadastro a{
-    color: #333;
-    background-color: white;
+    color: var(--primary);
+    background-color: var(--secondary);
     text-decoration: none;
     width: 100%;
     height: 45px;
@@ -202,6 +211,10 @@ body{
 .cadastro a:hover{
     scale: 1.1;
     transition: .5s all ease;
+}
+
+.btn:hover {
+    animation: pulse 0.6s ease infinite;
 }
 
 @keyframes neon-animation {
@@ -220,8 +233,4 @@ body{
     50% {
         transform: scale(1.05);
     }
-}
-
-.btn:hover {
-    animation: pulse 0.6s ease infinite;
 }

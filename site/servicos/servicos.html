@@ -59,7 +59,7 @@
     </div>
 
     <!-- Rodapé -->
-    <div class="footer">
+    <div class="content">
         <div class="container">
             <h2>Nossos <span>Serviços</span></h2>
             <p class="bold-text">Oferecemos soluções de monitoramento e controle de temperatura com foco em eficiência energética e economia para ambientes empresariais.</p>
@@ -74,35 +74,62 @@
         </div>
     </div>
 
-    <!-- Script para funcionalidade do modal -->
-    <script>
-        // Seleciona todos os cards e o modal
-        const cards = document.querySelectorAll('.box');
-        const modal = document.getElementById('cardModal');
-        const modalText = document.getElementById('modalText');
-        const closeModal = document.querySelector('.close');
-    
-        // Função para abrir o modal
-        cards.forEach(card => {
-            card.addEventListener('click', function() {
-                const cardContent = this.querySelector('.back p').textContent;
-                modalText.textContent = cardContent;
-                modal.style.display = 'block'; // Mostra o modal ao clicar
-            });
-        });
-    
-        // Função para fechar o modal
-        closeModal.addEventListener('click', function() {
-            modal.style.display = 'none'; // Esconde o modal ao clicar no "X"
-        });
-    
-        // Fechar modal ao clicar fora dele
-        window.addEventListener('click', function(event) {
-            if (event.target == modal) {
-                modal.style.display = 'none'; // Esconde o modal ao clicar fora dele
-            }
-        });
-    </script>
-    
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-left">
+            Navegue pelo site:
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="./servicos/servicos.html">Serviços</a></li>
+                <li><a href="./Sobre_nos/Sobre_nós.html">Sobre Nós</a></li>
+                <li><a href="./calculadora/index.html">Calculadora</a></li>
+            </ul>
+            </div>
+            <div class="footer-right">
+            Entre em contato:
+            <ul>
+                <li><img src="./img/instagram.png"> @airconomics</li>
+                <li><img src="./img/linkedin.png" alt=""> AIRConomics</li>
+                <li><img src="./img/whatsapp.png" alt=""> (11)99999-9999</li>
+            </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <img src="./img/airconomics_logo_completo.png" alt="">
+            <span class="footer-rights">AIRConomics © - 2024</span>
+        </div>
+    </footer>
+
 </body>
+
 </html>
+<!-- Script para funcionalidade do modal -->
+<script>
+    // Seleciona todos os cards e o modal
+    const cards = document.querySelectorAll('.box');
+    const modal = document.getElementById('cardModal');
+    const modalText = document.getElementById('modalText');
+    const closeModal = document.querySelector('.close');
+
+    // Função para abrir o modal
+    cards.forEach(card => {
+        card.addEventListener('click', function() {
+            const cardContent = this.querySelector('.back p').textContent;
+            modalText.textContent = cardContent;
+            modal.style.display = 'block'; // Mostra o modal ao clicar
+        });
+    });
+
+    // Função para fechar o modal
+    closeModal.addEventListener('click', function() {
+        modal.style.display = 'none'; // Esconde o modal ao clicar no "X"
+    });
+
+    // Fechar modal ao clicar fora dele
+    window.addEventListener('click', function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none'; // Esconde o modal ao clicar fora dele
+        }
+    });
+</script>
