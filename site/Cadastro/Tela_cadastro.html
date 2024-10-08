@@ -35,11 +35,11 @@
                     <i class='bx bxs-phone' ></i>
                 </div>
                 <div class="input-box">
-                    <input id="email_input" type="text" placeholder="Email" />
+                    <input oninput="verificar_email()" id="email_input" type="text" placeholder="Email" />
                     <i class='bx bxs-envelope'></i>
                 </div>
                 <div class="input-box">
-                    <input id="cnpj_input" type="text" placeholder="CNPJ" />
+                    <input oninput="verificar_cnpj()" id="cnpj_input" type="text" placeholder="CNPJ" />
                     <i class='bx bxs-briefcase' ></i>
                 </div>
                 <div class="input-box">
@@ -49,6 +49,7 @@
                 <div class="input-box">
                     <input onchange="verificar_senha()" id="confirmacao_senha_input" type="password" placeholder="Confirmar senha" />
                     <i class='bx bxs-lock-alt'></i>
+                    <span id="span_senha">Senha e confirmação de senha são diferentes</span>
                 </div>
                 <div class="senha-requisitos">
                     <span id="req_char"><i class='bx bxs-dislike'></i>8 caracteres</span>

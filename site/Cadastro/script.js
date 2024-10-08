@@ -1,7 +1,5 @@
 function verificar_requisitos(){
   var senha = senha_input.value
-  var tem_min = false
-  var tem_max = false
 
   if(senha.length >= 8){
     req_char.style.color = '#228B22'
@@ -42,7 +40,32 @@ function verificar_senha(){
   
   if(senha != conf_senha){
     confirmacao_senha_input.style.border = '1px solid #CC0000'
+    span_senha.style.display = 'block'
+    span_senha.style.visibility = 'visible'
   }else{
     confirmacao_senha_input.style.border = 'none'
+    span_senha.style.display = 'none'
+    span_senha.style.visibility = 'hidden'
   }
 }
+
+function verificar_email(){
+  var email = email_input.value
+
+  if(!email.includes('@') || !email.includes('.com')){
+    email_input.style.border = '1px solid #CC0000'
+  }else{
+    email_input.style.border = 'none'
+  }
+}
+
+// n funciona n sei pq, vou ver com o grandioso jp
+// function verificar_cnpj(){
+//   var cnpj = cnpj_input.value
+
+//   cnpj.replace('.', '')
+//   cnpj.replace('-', '')
+
+//   cnpj_input.value = cnpj
+//   console.log(cnpj)
+// }

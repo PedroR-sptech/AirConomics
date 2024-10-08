@@ -154,14 +154,27 @@
 
 }
 
+
+#span_senha{
+    display: none;
+    visibility: hidden;
+    color: #CC0000;
+    font-weight: bold;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
 .senha-requisitos{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     color: #CC0000;
+    padding-top: 30px;
+    padding-bottom: 15px;
     margin-bottom: 10px;
 }
+
 
 @keyframes neon-animation {
     0% {
