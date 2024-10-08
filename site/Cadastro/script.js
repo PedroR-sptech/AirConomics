@@ -60,12 +60,12 @@ function verificar_email(){
 }
 
 // n funciona n sei pq, vou ver com o grandioso jp
-// function verificar_cnpj(){
-//   var cnpj = cnpj_input.value
+function limpar_cnpj(){
+  var cnpj = cnpj_input.value
 
-//   cnpj.replace('.', '')
-//   cnpj.replace('-', '')
+  var cnpj_limpo = cnpj.replaceAll('.', '')
+  cnpj_limpo = cnpj_limpo.replaceAll('-', '')
 
-//   cnpj_input.value = cnpj
-//   console.log(cnpj)
-// }
+  cnpj_input.value = cnpj_limpo
+  
+}
