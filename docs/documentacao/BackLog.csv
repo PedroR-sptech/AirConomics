@@ -1,37 +1,40 @@
 Área,Requisitos,Descrição,Prioridade,Responsáveis,
 "Pesquisa e Inovação
-","Git Hub
-","Projetos atualizado no GitHub 
+,""Git Hub"
+,Projetos atualizado no GitHub 
 Documentação do Projeto Atualizada
-","Essencial
-","Pedro Henrique
+,Essencial
+,Pedro Henrique
 ",
-Pesquisa e Inovação,Planilha,Planilha de Riscos do Projeto,"Essencial
+Pesquisa e Inovação,Planilha,Planilha de Riscos do Projeto,Essencial"
 ",A definir,
-Pesquisa e Inovação,Gráfico,Especificação da Dashboard,"Essencial
+Pesquisa e Inovação,Gráfico,Especificação da Dashboard,Essencial"
 ",A definir,
-Algoritmos,Site Institucional,"Site Estático Institucional – Local em HTML/CSS/JavaScript","Essencial
+Algoritmos,Site Institucional,Site Estático Institucional – Local em HTML/CSS/JavaScript"
+,Essencial
 ",A definir,
-Algoritmos,Site Institucional,Site Estático Dashboard (Gráfico com ChartJS) - Local,"Essencial
+Algoritmos,Site Institucional,Site Estático Dashboard (Gráfico com ChartJS) - Local,Essencial"
 ",A definir,
-Algoritmos,Site Institucional,Site Estático Cadastro e Login – Local ( com conceito de repetições),"Essencial
+Algoritmos,Site Institucional,Site Estático Cadastro e Login – Local ( com conceito de repetições),Essencial"
 ",A definir,
-Tecnologia da Informação,Diagrama de Solução,Diagrama de Solução (Arquitetura Técnica do Projeto),"Essencial
+Tecnologia da Informação,Diagrama de Solução,Diagrama de Solução (Arquitetura Técnica do Projeto),Essencial"
 ",A definir,
-Tecnologia da Informação,Trello,Atividades organizadas na ferramenta de Gestão (Sprints / Atividades),"Essencial
+Tecnologia da Informação,Trello,Atividades organizadas na ferramenta de Gestão (Sprints / Atividades),Essencial"
 ",Willian,
-Tecnologia da Informação,BackLog,"BackLog da Sprint (Demanda, Pontuação, Prioridade)","Essencial
+Tecnologia da Informação,BackLog,BackLog da Sprint (Demanda, Pontuação, Prioridade)"",""Essencial"
 ",Pedro Rogério,
-Banco de Dados,Modelagem,Modelagem Lógica do Projeto v1,"Essencial
+Banco de Dados,Modelagem,Modelagem Lógica do Projeto v1,Essencial"
 ",A definir,
-Banco de Dados,Tabelas,"Script de criação do Banco / Tabelas criadas em BD local","Essencial
+Banco de Dados,Tabelas,Script de criação do Banco / Tabelas criadas em BD local"
+,Essencial
 ",A definir,
-Arquitetura Computacional,Sensor,Simular a integração do Sistema ( utilização do Sensor + Gráfico ),"Essencial
+Arquitetura Computacional,Sensor,Simular a integração do Sistema ( utilização do Sensor + Gráfico ),Essencial"
 ",A definir,
-Arquitetura Computacional,API,Usar API Local / Sensor,"Essencial
+Arquitetura Computacional,API,Usar API Local / Sensor,Essencial"
 ",A definir,
-Sistemas Operacionais,VMLinux,"Instalar MYSQL na VMLinux e inserção de dados do Arduíno 
- no MySQL na mesma máquina","Essencial
+Sistemas Operacionais,VMLinux,Instalar MYSQL na VMLinux e inserção de dados do Arduíno "
+" no MySQL na mesma máquina"",""Essencial"
 ",A definir,
-Sistemas Operacionais,Solução Técnica,Validar a solução técnica,"Essencial
+Sistemas Operacionais,Solução Técnica,Validar a solução técnica,Essencial"
 ",A definir,
+"
